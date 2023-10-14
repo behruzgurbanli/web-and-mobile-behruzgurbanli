@@ -38,21 +38,37 @@ body {
     align-items: center;
     justify-content: center;
     transition-duration: 300ms;
+    position: relative;
+    transition: transform 1s;
+}
+
+.navigation-container a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: width 1s;
+}
+
+.navigation-container a:hover::before {
+    width: 100%;
 }
 
 .navigation-container a:hover {
     transition-duration: 300ms;
+    transform: scale(1.05);
     background-color: #000000;
 }
 
 
 
-
-
-
-
-
-
+#profile {
+    margin-top: 25px;
+    height: 250px;
+}
 
 
 
