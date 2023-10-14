@@ -1,0 +1,37 @@
+body {
+    background-color:gainsboro;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#profile-container {
+    display: flex;
+}
+
+#profile-container img, p, h2 {
+    display: inline;
+}
+
+#profile-container p, h2 {
+    float: right;
+}
+
+#profile-photo {
+    border-radius: 200px;
+    transition-duration: 100ms;
+}
+
+#profile-photo:hover {
+    border-radius: 200px;
+    transition-duration: 100ms;
+    width: 220px;
+    height: 220px;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 800px;
+    border: 1.5px solid blue;
+    border-radius: 5px;
+}
