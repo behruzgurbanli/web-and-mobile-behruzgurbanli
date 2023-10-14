@@ -63,45 +63,91 @@ body {
     background-color: #000000;
 }
 
-
-
 #profile {
     margin-top: 25px;
     height: 250px;
-}
-
-
-
-
-
-#profile-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#profile-container img, p, h2 {
-    display: inline;
+.text-container {
+    margin-left: 50px;
 }
 
-#profile-container p, h2 {
-    float: right;
+.text-container * {
+    margin-top: 10px;
+}
+
+.text-container h2 {
+    /* MUST BE EDITED */
 }
 
 #profile-photo {
-    border-radius: 200px;
-    transition-duration: 100ms;
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
-#profile-photo:hover {
+#profile-photo img {
     border-radius: 200px;
-    transition-duration: 100ms;
+    transition-duration: 200ms;
+}
+
+#profile-photo img:hover {
+    border-radius: 200px;
+    transition-duration: 200ms;
     width: 220px;
     height: 220px;
 }
 
+
 hr {
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 800px;
+    width: 50%;
     border: 1.5px solid blue;
     border-radius: 5px;
+    margin-left: 25%;
+    padding: 0;  
+}
+
+
+#gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#gallery-container:hover .gallery-image:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 50%;
+}
+  
+.gallery-image {
+    position: relative;
+    padding: 10px;
+    transition: 300ms;
+}
+  
+.gallery-image img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    position: relative;
+}
+footer p {
+    padding: 15px;
 }
