@@ -164,3 +164,71 @@ footer {
 footer p {
     padding: 15px;
 }
+
+.contact-me-text {
+    text-align: center;
+    padding: 10px;
+}
+
+#contact-form {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    justify-content: center;
+}
+
+#contact-form div, input, textarea {
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 27px;
+    border-radius: 5px;
+    border: 0.7px solid gray;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form #button {
+    background-color: deepskyblue;
+    color: white;
+    width: 100px;
+    border: 0;
+    border-radius: 25px;
+    margin-right: 100px;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: center;
+    padding: 5px;
+}
+
+.box-container {
+    margin-left: 25%;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.box-container li span {
+    font-weight: 800;
+    padding: 5px 10px 5px 10px;
+    background-color: gray;
+    color: #ffffff;
+}
+
+.box-container p {
+    padding-top: 10px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills li {
+    padding: 10px;
+    margin-right: 50px;
+}
